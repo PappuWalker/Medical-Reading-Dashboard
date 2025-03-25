@@ -1,0 +1,44 @@
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 1rem;
+    border-left: 4px solid;
+  }
+  
+  .current-value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  .current-value.abnormal {
+    color: #ff4d4d;
+  }
+  
+  .warning-icon {
+    margin-left: 0.5rem;
+  }
+  
+  .stat-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .stat-details span {
+    font-weight: bold;
+    color: #888;
+  }
+  
+  .normal-range {
+    font-size: 0.8rem;
+    color: #888;
+  }

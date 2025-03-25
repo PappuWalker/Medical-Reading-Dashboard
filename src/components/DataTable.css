@@ -1,0 +1,40 @@
+.table-container {
+    margin-top: 2rem;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #333;
+  }
+  
+  th {
+    background-color: #2a2a2a;
+    position: sticky;
+    top: 0;
+  }
+  
+  tr:hover {
+    background-color: #2a2a2a;
+  }
+  
+  tr.anomaly {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  
+  tr.anomaly:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+  }

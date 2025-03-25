@@ -33,7 +33,7 @@ const FileUpload = ({ onUpload }: FileUploadProps) => {
 
   const handleDefaultData = useCallback(async () => {
     try {
-      const response = await fetch('/default-data/Medical_Readings_Normal.xlsx');
+        const response = await fetch(`${import.meta.env.BASE_URL}default-data/Medical_Readings_Normal.xlsx`);
       const data = await response.arrayBuffer();
       const workbook = XLSX.read(data, { type: 'array' });
       const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
@@ -58,7 +58,7 @@ const FileUpload = ({ onUpload }: FileUploadProps) => {
       </label>
       <div className="default-data-container">
         <button onClick={handleDefaultData} className="default-data-button">
-          Use Default Data
+          Use Default Data Nigga
         </button>
       </div>
     </div>

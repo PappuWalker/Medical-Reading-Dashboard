@@ -8,5 +8,18 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
     }
+  },
+    build: {
+      chunkSizeWarningLimit: 1000, // Increase limit to 1000kB
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'chart-js': ['chart.js', 'react-chartjs-2'],
+            'xlsx': ['xlsx']
+          }
+        
+      }
+    }
   }
+
 });

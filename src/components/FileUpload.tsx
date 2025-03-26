@@ -58,7 +58,7 @@ const FileUpload = ({ onUpload }: FileUploadProps) => {
       </label>
       <div className="default-data-container">
         <button onClick={handleDefaultData} className="default-data-button">
-          Use Default Data Nigga
+          Use Default Data 
         </button>
       </div>
     </div>
